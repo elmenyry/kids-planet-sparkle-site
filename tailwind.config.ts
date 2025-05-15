@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Kids Planet custom colors
+				"kids-purple": "#9b87f5",
+				"kids-soft-purple": "#E5DEFF",
+				"kids-soft-blue": "#D3E4FD",
+				"kids-soft-yellow": "#FEF7CD",
+				"kids-orange": "#F97316",
+				"kids-gray": "#8E9196",
+			},
+			fontFamily: {
+				nunito: ['Nunito', 'sans-serif'],
+				poppins: ['Poppins', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +96,26 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'bounce-slow': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-15px)' },
+				},
+				'rotate-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 4s ease-in-out infinite',
+				'bounce-slow': 'bounce-slow 5s ease-in-out infinite',
+				'rotate-slow': 'rotate-slow 15s linear infinite',
 			}
 		}
 	},
