@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Star, Book, Smile, Pencil, Toys } from "lucide-react";
+import { Star, Book, Smile, Pencil, Backpack } from "lucide-react";
 
 const ProgramsSection = () => {
   return (
@@ -53,17 +53,17 @@ const ProgramsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ActivityCard 
               title="Art & Craft Studio"
-              icon={<Toys className="w-6 h-6 text-kids-purple" />}
+              icon={<Backpack className="w-6 h-6 text-kids-purple" />}
               description="Unleash creativity through painting, sculpture, and mixed media projects."
             />
             <ActivityCard 
               title="Science Discovery Lab"
-              icon={<Toys className="w-6 h-6 text-kids-orange" />}
+              icon={<Backpack className="w-6 h-6 text-kids-orange" />}
               description="Hands-on experiments and exploration of natural phenomena."
             />
             <ActivityCard 
               title="Music & Movement"
-              icon={<Toys className="w-6 h-6 text-blue-500" />}
+              icon={<Backpack className="w-6 h-6 text-blue-500" />}
               description="Rhythm, dance, and musical instrument introduction for artistic expression."
             />
           </div>
