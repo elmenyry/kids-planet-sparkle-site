@@ -26,7 +26,6 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Star className="h-8 w-8 text-kids-purple mr-2 animate-spin-slow" />
           <span className="font-nunito font-extrabold text-2xl text-gradient">Kids Planet</span>
         </div>
         
